@@ -16,18 +16,17 @@ body {
   width: 100vw; /* 100% == 100vw vieport width */
   max-width: 100%; /* hack for 100vw */
   /* VH = viewport height */
+  min-height: 100vh;
   padding-top: 50px;
 }
 
 .section-about {
-  height: 100vh;
 }
 .section-portfolio {
   display: flex;
-  height: 100vh;
 }
 .section-contacts {
-  height: 15vh;
+  min-height: 15vh;
   background-color: gray;
   padding-top: 5px;
   padding-bottom: 5px;
