@@ -4,59 +4,78 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>about sonya's life</title>
-    <style>
-      body {
-        background-color: rgb(211, 211, 211);
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      h1 {
-        font-size: 30pt;
-      }
-      h3 {
-        font-size: 15pt;
-      }
-      p.a {
-        font-size: 7pt;
-        font-style: italic;
-        color: dimgray;
-      }
-      p.b {
-        font-size: 15pt;
-        font-weight: bold;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>соня і маленькі літери</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <h1>привіт, я соня, я люблю гори і не люблю великі літери.</h1>
-    <a href="https://www.instagram.com/sonya_kalyn/?hl=en" target="_blank">
-      <img src="mountains_and_i.jpg"
-    /></a>
-    <p class="a">посилання на мій інстаграм⬆(клац по фотці)</p>
+    <div class="header">
+      <div class="wrapper">
+        <div class="menu">
+          <p><a class="1" href="#about">про мене</a></p>
+          <p><a href="#portfolio">портфоліо</a></p>
+          <p><a class="2" href="#contacts">контакти</a></p>
+        </div>
+      </div>
+    </div>
 
-    <h3>
-      я навчаюсь в львівській академії мистецтв на
-      <a href="https://www.instagram.com/gdlnam/?hl=en" target="_blank">
-        кафедрі графічного дизайну.</a
-      >
-      в майбутньому бачу себе дизайнеркою друкованих видань.
-    </h3>
+    <div id="about" class="section section-about">
+      <div class="wrapper">
+        <div class="name">
+          <img class="sonya" src="sonya.png" style="padding-left: 400px" />
+        </div>
+        <div class="about">
+          <img class="my--photo" src="mountains_and_i.jpg" />
+          <div class="text">
+            <h2>про мене</h2>
+            <h3>привіт, я соня, я люблю гори і не люблю великі літери.</h3>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <p class="b">чому мені подобається верстати книжечки:</p>
-    <ol>
-      <li>я люблю книжки</li>
-      <li>можна милуватися буквочками і працювати одночасно</li>
-      <li>монотонна робота дуже заспокоює після того, як почитаєш новини</li>
-    </ol>
+    <div id="portfolio" class="section section-portfolio">
+      <div class="wrapper">
+        <h2 class="portfolio">портфоліо</h2>
+        <div class="gallery">
+          <div class="gallery--item"><img src="poster.jpg" /></div>
+          <div class="gallery--item"><img src="lac1.jpg" /></div>
+          <div class="gallery--item">
+            <img src="1.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <p class="b">що я роблю в вільний час</p>
-    <ul>
-      <li>цікавлюсь урбанізмом</li>
-      <li>читаю</li>
-      <li>займаюся громадською діяльністю</li>
-      <li>сплю</li>
-      <li>дивлюсь серіальчики</li>
-      <li>ходжу в гори</li>
-    </ul>
+    <div id="contacts" class="section section-contacts">
+      <div class="wrapper">
+        <div class="footer">
+          <h2>контакти</h2>
+          <div class="little--links">
+            <a
+              class="link footer--link"
+              href="https://www.instagram.com/sonya_kalyn/?hl=en"
+              target="_blank"
+            >
+              мій інстаграм</a
+            >
+            <a
+              class="link footer--link"
+              href="https://www.facebook.com/sofffja/"
+              target="_blank"
+            >
+              мій фейсбук</a
+            >
+            <a class="link footer--link" href="#top">на початок⬆</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
