@@ -5,7 +5,8 @@
 html {
   scroll-behavior: smooth;
   background-color: black;
-  font-family: 'JetBrains Mono', monospace;}
+  font-family: "JetBrains Mono", monospace;
+}
 
 body {
   margin: 0;
@@ -24,17 +25,15 @@ body {
 }
 .section-portfolio {
   display: flex;
+  min-height: 60vh;
 }
 .section-contacts {
   min-height: 15vh;
   background-color: black;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 .header {
   background-color: black;
-
   position: fixed;
   top: 0px;
   left: 0px;
@@ -49,7 +48,7 @@ body {
 
 .header .wrapper,
 .section .wrapper {
-  width: 960px;
+  width: 80vw;
   margin: 0 auto;
   justify-content: space-between;
 }
@@ -58,21 +57,25 @@ body {
 }
 .sonya {
   position: fixed;
+  min-width: 33vw;
   top: 300px;
   pointer-events: none;
-    vertical-align: middle;
+  vertical-align: middle;
+  justify-self: center;
 }
 
 .about {
   display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    align-content: flex-start;
-    width: 100%;}
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  min-height: 100vh;
 }
+
 .text {
-  padding: left 50px;
+  padding-left: 50px;
 }
 .menu {
   width: 100%;
@@ -87,8 +90,8 @@ body {
 
 .menu a {
   color: white;
-  font-size: 16px;
-  font-family: 'JetBrains Mono', monospace;
+  font-size: 24px;
+  font-family: "JetBrains Mono", monospace;
   font-weight: bold;
   line-height: 60px;
   padding: 0 8px;
@@ -105,7 +108,8 @@ body {
   align-items: stretch;
 }
 .gallery--item {
-  width: 32%;
+  width: 25vw;
+  height: 80vh;
   margin: 0em;
 }
 .gallery--item img {
@@ -118,7 +122,7 @@ body {
   text-decoration: none;
 }
 .my--photo {
-  width: 300px;
+  height: 100vh;
 }
 
 .grid--view {
@@ -126,30 +130,32 @@ body {
 }
 
 h2 {
-  font-size: 32px;
-  font-family: 'JetBrains Mono', monospace;
+  font-size: 48px;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 800;
 }
-h3{
-  font-family: 'JetBrains Mono', monospace;
+h3 {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 24px;
 }
 .footer {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
   color: white;
-  height: 10vh;
 }
 
 .little-links {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: flex-end;
 }
 
 .footer--link {
   color: white;
   padding: 5px;
+  font-size: 24px;
 }
-.footer h2{
-font-size: 16px;
+.footer h2 {
+  font-size: 24px;
 }
