@@ -4,16 +4,28 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/css/lightgallery.min.css"
+      integrity="sha512-e/7+n/bcByOQg6+rGt7Bx12Si0rpj4Xfe3EeS3W2RDSGGG/qT9rC7ZQCVAgaVAmZKZisvZ1DqaMd66TzfVO/Sw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap"
       rel="stylesheet"
     />
+
     <meta name="description" content="соня і маленькі літери" />
     <meta name="og:image" content="https://kalynsonya.github.io/og_image.JPG" />
     <link rel="icon" type="image/x-icon" href="/favicon.png" />
+
     <title>соня і маленькі літери</title>
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -47,10 +59,32 @@
       <div class="wrapper">
         <h2 class="portfolio">портфоліо</h2>
         <div class="gallery">
-          <div class="gallery--item"><img src="poster.jpg" /></div>
-          <div class="gallery--item"><img src="lac1.jpg" /></div>
           <div class="gallery--item">
-            <img src="1.jpg" />
+            <a
+              href="poster.jpg"
+              target="_blank"
+              data-sub-html="<h4>блискавка-не-маквін</h4><p>постер з курсів prjctr про верстку, жаль шо російською</p>"
+            >
+              <img src="poster.jpg" />
+            </a>
+          </div>
+          <div class="gallery--item">
+            <a
+              href="lac1.jpg"
+              target="_blank"
+              data-sub-html="<h4> чому у львові будуть художниці  </h4> <p> постер до виставки в муніципальному мистецькому центрі</p>"
+            >
+              <img src="lac1.jpg" />
+            </a>
+          </div>
+          <div class="gallery--item">
+            <a
+              href="1.jpg"
+              target="_blank"
+              data-sub-html="<h4> муніципальний мистецький центр - топ </h4> <p> такий же класний, як зірочки для людини, яка любила кнопкові телефони </p>"
+            >
+              <img src="1.jpg" />
+            </a>
           </div>
         </div>
       </div>
@@ -80,5 +114,18 @@
         </div>
       </div>
     </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/lightgallery.min.js"
+      integrity="sha512-+1CyleTPoFvPO15/CfBZ5h6k/mu/qCQe9uxq1tEfO7SRJ52MnCAQ561bAYkvrsGtnG7AkcvKtVwdeoZc8ps7bQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script type="text/javascript">
+      lightGallery(document.getElementById("portfolio"), {
+        selector: ".gallery--item a",
+      });
+    </script>
   </body>
 </html>
